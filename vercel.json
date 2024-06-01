@@ -9,8 +9,7 @@
     "functions": {
         "app.js": {
           "runtime":"@vercel/node", 
-          "maxDuration": 60,
-          "includeFiles": ["dist/**"]
+          "maxDuration": 60
         },
         "api/*.js": {
           "maxDuration": 60
