@@ -9,9 +9,6 @@
     "functions": {
         "app.js": {
           "maxDuration": 60
-        },
-        "api/*.js": {
-          "maxDuration": 60
         }
     }
 }
