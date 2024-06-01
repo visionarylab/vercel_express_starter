@@ -1,12 +1,5 @@
 {
     "version": 2,
-    "builds": [
-     {
-      "src": "app.js",
-      "use": "@vercel/node",
-      "config": { "includeFiles": ["dist/**"] }
-     }
-    ],
     "routes": [
      {
       "src": "/(.*)",
@@ -15,10 +8,12 @@
     ],
     "functions": {
         "app.js": {
-          "maxDuration": 60
+          "runtime":"@vercel/node", 
+          "maxDuration": 60,
+          "includeFiles": ["dist/**"]
         },
         "api/*.js": {
           "maxDuration": 60
         }
     }
-   }
+}
